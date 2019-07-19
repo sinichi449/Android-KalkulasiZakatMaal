@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/txtNamaZakat"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_toRightOf="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKeterangan"
+            android:textSize="12sp"
+            android:layout_below="@id/txtNamaZakat"
+            android:layout_toRightOf="@+id/imageView"/>
+        <!-- TextView pilihan jenis zakat maal -->
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="monospace"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/txtNamaZakat"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtKeterangan"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
